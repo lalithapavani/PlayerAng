@@ -1,0 +1,14 @@
+<div *ngIf="user">
+<h1>Hello user</h1>
+</div>
+
+<div *ngIf="admin">
+<h1>Hello admin</h1>
+<div class="topnav">
+  <a class="active" href="#home"> Home </a>
+  <a routerLink="viewplayers"> View Players </a>
+  <a routerLink="addplayer"> Add Player </a>
+  <router-outlet></router-outlet>
+</div>
+</div>
+
